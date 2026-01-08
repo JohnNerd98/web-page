@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Infobloom — Services</title>
+  <link rel="stylesheet" href="styles.css" />
+  <meta name="description" content="Infobloom — web design, SEO, content & analytics to help your business grow." />
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#">Infobloom</a>
+
+      <button id="nav-toggle" class="nav-toggle" aria-expanded="false" aria-label="Toggle navigation">
+        ☰
+      </button>
+
+      <nav id="main-nav" class="main-nav" aria-label="Main navigation">
+        <ul>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <h1>Infobloom</h1>
+        <p class="tagline">Grow your online presence with thoughtful design, data-driven SEO, and content that converts.</p>
+        <p class="hero-ctas">
+          <a class="btn primary" href="#services">See Services</a>
+          <a class="btn" href="#contact">Contact Us</a>
+        </p>
+      </div>
+    </section>
+
+    <section id="services" class="container services">
+      <h2>Our Services</h2>
+      <p class="lead">We offer a focused set of services designed to make your brand bloom online.</p>
+
+      <div class="service-grid">
+        <article class="card">
+          <div class="card-emoji">🌐</div>
+          <h3>Web Design & Development</h3>
+          <p>Fast, accessible, and responsive websites built to represent your brand and convert visitors.</p>
+          <button class="btn tiny learn-btn" data-service="Web Design & Development">Learn more</button>
+        </article>
+
+        <article class="card">
+          <div class="card-emoji">🔍</div>
+          <h3>SEO & Marketing</h3>
+          <p>On-page SEO, keyword strategy, and campaigns that attract qualified traffic to your site.</p>
+          <button class="btn tiny learn-btn" data-service="SEO & Marketing">Learn more</button>
+        </article>
+
+        <article class="card">
+          <div class="card-emoji">✍️</div>
+          <h3>Content Creation</h3>
+          <p>Blog posts, landing page copy, and content plans tailored to your audience and goals.</p>
+          <button class="btn tiny learn-btn" data-service="Content Creation">Learn more</button>
+        </article>
+
+        <article class="card">
+          <div class="card-emoji">📈</div>
+          <h3>Analytics & Reporting</h3>
+          <p>Actionable analytics and monthly reports that help you measure progress and decide next steps.</p>
+          <button class="btn tiny learn-btn" data-service="Analytics & Reporting">Learn more</button>
+        </article>
+      </div>
+    </section>
+
+    <section id="about" class="container about">
+      <h2>About Infobloom</h2>
+      <p>We’re a small team of designers, writers, and analysts who enjoy turning ideas into measurable growth. We focus on clarity, performance, and practical results.</p>
+    </section>
+
+    <section id="contact" class="container contact">
+      <h2>Contact Us</h2>
+      <p>Tell us about your project — we'll follow up within 48 hours.</p>
+
+      <form id="contact-form" class="contact-form" novalidate>
+        <label>
+          Name
+          <input type="text" name="name" id="name" required placeholder="Your name" />
+        </label>
+
+        <label>
+          Email
+          <input type="email" name="email" id="email" required placeholder="you@example.com" />
+        </label>
+
+        <label>
+          Message
+          <textarea name="message" id="message" rows="5" required placeholder="How can we help?"></textarea>
+        </label>
+
+        <button class="btn primary" type="submit">Send message</button>
+        <p id="form-status" class="form-status" aria-live="polite"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <small>© <span id="year"></span> Infobloom — Simple services to help your business grow.</small>
+      <nav class="footer-nav" aria-label="Footer">
+        <a href="#services">Services</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </footer>
+</body>
+</html>
